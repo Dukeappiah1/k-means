@@ -1,0 +1,20 @@
+## K-means clustering of NHANES 2017-2020 data
+
+This is the source code for a K means app which runs on R and Shiny. The data for the analysis comes from the 2017-2020 cycle of the National Health and Nutrition Examination Survey (NHANES). NHANES is designed to assess the health and nutritional status of adults and children in the United States (available at <https://wwwn.cdc.gov/nchs/nhanes/>. The survey is unique in that it combines interviews and physical examinations. Data on 7425 adults aged 18 years and older with complete data on age, systolic blood pressure, body mass index, glycohemoglobin, HDL cholesterol and total cholesterol. 
+
+To run it locally, you'll need to install the latest versions of [Shiny](<http://shiny.rstudio.com>), and [factoextra](<https://cran.r-project.org/web/packages/factoextra/index>.html).
+
+The analytic dataset as well as the code to create it is available at 
+
+```{r setup, include=FALSE}
+install.packages(c('shiny', ' factoextra '))
+```
+
+You may need to restart RStudio to make sure the newly-installed packages work properly.
+
+After all these packages are installed, you can run this app by entering the directory, and then running the server.R and ui. R files in RStudio.
+
+Some of the code used to create this app are based on the Kmeans example from the Shiny gallery available at <https://shiny.posit.co/r/gallery/start-simple/kmeans-example/>.
+
+
+
